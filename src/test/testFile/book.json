@@ -1,0 +1,43 @@
+{
+  "booking_logic": "LC",
+  "booking_submission": "One Ping",
+  "carrier": "EGLV",
+  "commodity": "string",
+  "consignee_party": {
+    "address": "string",
+    "company_name": "string",
+    "email": "user@example.com",
+    "first_name": "string",
+    "last_name": "string",
+    "phone": "string"
+  },
+  "container_weight": 100,
+  "customer_id": "test1@test.com",
+  "email_updates": "test1@test.com",
+  "equipment": "20SD",
+  "etd_earliest_departure": "2022-07-06",
+  "etd_latest_departure": "2022-07-06",
+  "excel_batch_id": "string",
+  "excel_bucket_path": "string",
+  "freight_terms": "string",
+  "hs_code": "string",
+  "max_rate": 1000,
+  "mode": "string",
+  "place_of_delivery": "string",
+  "place_of_reciept": "string",
+  "port_of_discharge": "USLAX",
+  "port_of_loading": "CNSHA",
+  "quantity": 1,
+  "shipper_party": {
+    "address": "string",
+    "company_name": "string",
+    "email": "user@example.com",
+    "first_name": "string",
+    "last_name": "string",
+    "phone": "string"
+  },
+  "template_id": "string",
+  "volume": 0,
+  "volume_UOM": "string",
+  "weight_UOM": "KG"
+}

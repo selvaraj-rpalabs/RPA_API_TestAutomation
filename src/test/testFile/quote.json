@@ -1,0 +1,11 @@
+{
+  "carrier": "EGLV",
+  "commodity": "string",
+  "customer_id": "test1@test.com",
+  "equipment": "20SD",
+  "etd_earliest_departure": "2022-07-06",
+  "etd_latest_departure": "2022-07-06",
+  "port_of_discharge": "USLAX",
+  "port_of_loading": "CNSHA",
+  "quantity": 1
+}

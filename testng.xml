@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RPA Test Suite">
+    <test name="Bluex-User">
+        <classes>
+            <class name="BlueXUser"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Bluex-Booking">
+        <classes>
+            <class name="BlueXBooking"/>
+        </classes>
+
+    </test> <!-- Test -->
+    <test name="Content-Extraction">
+        <classes>
+            <class name="ContentExtraction"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
