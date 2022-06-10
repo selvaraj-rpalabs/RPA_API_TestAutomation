@@ -24,7 +24,7 @@ public class BlueXBooking {
         RestAssured.basePath="/bookings";
     }
 
-//    @Test(priority = 1)
+    @Test(priority = 1)
     public void getBookingDetail() throws Exception{
         applicationNo =
         given()
