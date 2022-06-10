@@ -88,4 +88,14 @@ public class BlueXBooking extends Base{
         extentTest.pass("Get Quote done successfully");
     }
 
+    @BeforeTest
+    public void before(){
+        extent.attachReporter(spark);
+    }
+
+    @AfterTest
+    public void tearDown() {
+        extent.flush();
+    }
+
 }

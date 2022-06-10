@@ -65,4 +65,15 @@ public class ContentExtraction extends Base{
         extentTest.pass("Extraction done successfully");
 
     }
+
+    @BeforeTest
+    public void before(){
+        extent.attachReporter(spark);
+    }
+
+    @AfterTest
+    public void tearDown() {
+        extent.flush();
+    }
+
 }

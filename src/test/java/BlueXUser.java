@@ -107,6 +107,16 @@ public class BlueXUser extends  Base{
 
     }
 
+    @BeforeTest
+    public void before(){
+        extent.attachReporter(spark);
+    }
+
+    @AfterTest
+    public void tearDown() {
+        extent.flush();
+    }
+
 }
 
 
