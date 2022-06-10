@@ -1,5 +1,13 @@
 #Ignore target folder
 target/
+target/surefire-reports
+target/test-classes
+target/generated-sources
+target/maven-status
+target/maven-archiver
+target/classes
+target/generated-sources
+target/generated-test-sources
 
 #Ignore Other files
 *.html
