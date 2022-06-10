@@ -89,12 +89,12 @@ public class BlueXBooking extends Base{
     }
 
     @BeforeTest
-    public void before(){
+    public void attachReport(){
         extent.attachReporter(spark);
     }
 
     @AfterTest
-    public void tearDown() {
+    public void flushReport() {
         extent.flush();
     }
 
