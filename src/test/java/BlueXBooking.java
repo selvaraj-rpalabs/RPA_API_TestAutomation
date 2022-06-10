@@ -1,6 +1,10 @@
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
@@ -12,7 +16,7 @@ import java.util.HashMap;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class BlueXBooking {
+public class BlueXBooking extends Base{
 
     Path file = Path.of("./src/test/testFile/book.json");
     String applicationNo = "";
@@ -26,6 +30,8 @@ public class BlueXBooking {
 
     @Test(priority = 1)
     public void getBookingDetail() throws Exception{
+        ExtentTest extentTest = extent.createTest("BlueX Booking");
+        extentTest.log(Status.INFO, "Post Booking Started");
         applicationNo =
         given()
                 .contentType(ContentType.JSON)
@@ -41,6 +47,7 @@ public class BlueXBooking {
                 .extract().response()
                 .path("data.booking_details.application_number").toString();
         System.out.println("Application Number is " + applicationNo);
+        extentTest.pass("Booking placed successfully");
     }
 
 //    @Test(priority = 2, dependsOnMethods = "getBookingDetail")
@@ -64,6 +71,8 @@ public class BlueXBooking {
 
     @Test(priority = 3)
     public void getQuote() throws  Exception{
+        ExtentTest extentTest = extent.createTest("BlueX Booking");
+        extentTest.log(Status.INFO, "Get Booking Started");
         RestAssured.basePath="/bluex/quote";
         given()
                 .contentType(ContentType.JSON)
@@ -76,5 +85,7 @@ public class BlueXBooking {
                 .and()
                 .body("status",equalTo("success"))
                 .log().all();
+        extentTest.pass("Get Quote done successfully");
     }
+
 }

@@ -1,2 +1,7 @@
 #Ignore target folder
-target
+target/
+
+#Ignore Other files
+*.html
+*.class
+/target/
