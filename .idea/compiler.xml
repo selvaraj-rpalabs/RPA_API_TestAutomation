@@ -10,5 +10,8 @@
         <module name="RestAPI_AutomationTesting" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RestAPI_AutomationTesting" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

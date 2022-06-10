@@ -18,10 +18,10 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>Extent Framework</documentTitle>
+        <documentTitle>RPA API Automation Framework</documentTitle>
 
         <!-- report name - displayed at top-nav -->
-        <reportName>Build 1</reportName>
+        <reportName>Smoke Testing</reportName>
 
         <!-- custom javascript -->
         <scripts>
